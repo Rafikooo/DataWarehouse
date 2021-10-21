@@ -56,7 +56,7 @@ class AppFixtures extends Fixture
 
     private function loadProducts(): void
     {
-        $file = file_get_contents(__DIR__ . "/Shoes.json");
+        $file = file_get_contents(__DIR__ . "/Shoess.json");
         $data = json_decode($file, true);
         foreach ($data as $item) {
             $product = new Product();
